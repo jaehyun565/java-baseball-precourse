@@ -125,6 +125,16 @@
 
 ---
 
+## 📈 구현할 기능 목록
+- 3자리 수 랜덤 난수 생성 구현
+- 3자리 수 입력 기능 구현
+- 오입력 시 error 발생 기능 구현
+- 규칙에 따라 반환되는 출력 구현
+- 게임 종료 기능 구현
+- 종료 후 재시작 기능 구현
+
+---
+
 ## 📝 License
 
 This project is [MIT](https://github.com/woowacourse/java-baseball-precourse/blob/master/LICENSE) licensed.
