@@ -4,22 +4,18 @@ import camp.nextstep.edu.missionutils.Randoms;
 
 public class BaseballGame {
 
-	private static int makeRandNum() {
-		int randNum = Randoms.pickNumberInRange(0,999);
+	// 1. 컴퓨터 3자리 랜덤 숫자 생성
+	public int[] generateComputerNum() {
 
-		Randoms.pickNumberInRange(0, 999);
-		boolean check = true;
-		while (check) {
-			if (randNum < 100) {
-				randNum = Randoms.pickNumberInRange(0, 999);
-			} else if (randNum / 100 == (randNum % 100) / 10 || randNum / 100 == randNum % 10
-				|| (randNum % 100) / 10 == randNum % 10) {
-				randNum = Randoms.pickNumberInRange(0, 999);
-			} else {
-				check = false;
+		int[] computerNum = new int[3];
+
+		for (int i = 0; i < 3; i++) {
+			int randNum = Randoms.pickNumberInRange(1, 9);
+			while (computerNum[0] == randNum || computerNum[1] == randNum) {
+				randNum = Randoms.pickNumberInRange(1, 9);
 			}
+			computerNum[i] = randNum;
 		}
-		return randNum;
+		return computerNum;
 	}
-
 }
