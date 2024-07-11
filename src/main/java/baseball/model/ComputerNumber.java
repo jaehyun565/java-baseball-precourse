@@ -1,15 +1,15 @@
 package baseball.model;
 
+import static baseball.model.ConstantNumber.NUMSIZE;
+
 import camp.nextstep.edu.missionutils.Randoms;
 
 // 1. 컴퓨터 3자리 랜덤 숫자 생성
-public class computerNumber {
-
-	private final int NUMSIZE = 3;
+public class ComputerNumber {
 
 	int[] computerNum = new int[NUMSIZE];
 
-	private computerNumber() {
+	public ComputerNumber() {
 		clearNum();
 	}
 
